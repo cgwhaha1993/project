@@ -23,7 +23,7 @@ ul { padding: 0; margin: 0; list-style: none; }
 
 .datalist ul li p.price span::before { content: '￥'; }
 
-.datalist ul li p.save { color: #58bc58; }
+.datalist ul li p.save { color: #DD0207; }
 
 .datalist ul li:first-child { border-color: #f60; }
 

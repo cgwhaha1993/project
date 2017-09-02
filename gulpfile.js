@@ -14,7 +14,7 @@ gulp.task('compileSass',function(){
 	gulp.src('./src/sass/*.scss') //文件流（文件在内存中的状态，水流）
 
 		// 编译
-		.pipe(sass({outputStyle:'compact'}))
+		.pipe(sass({outputStyle:'compact'}).on('error', sass.logError))
 
 		// 输出文件
 		.pipe(gulp.dest('./src/css'))
