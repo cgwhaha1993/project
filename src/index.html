@@ -16,29 +16,33 @@
             <h4><a href="#">请登录</a></h4>
             <h4><a href="#">免费注册</a></h4>
             <div class="top_title_right">
-                <h5>我的中酒网<i class="firsti"></i></h5>
-                <div class="xiala">
+                <h5 class="wozj">我的中酒网<i class="firsti"></i></h5>
+                <div class="xiala wzj_detail">
                     <ul>
                         <li><a href="#"></a>已买到的商品</li>
                         <li><a href="#"></a>我关注的商品</li>
                         <li><a href="#"></a>我关注的店铺</li>
                     </ul>
                 </div>
-                <h5>购物车</h5>
-                <h5>微信端</h5>
-                <div class="xiala"><img src="img/qrcode.png" width="90" height="90"/></div>
-                <h5>APP</h5>
-                <div class="xiala"><img src="img/mob.png" width="90" height="90" /></div>
-                <h5>卖家中心<i></i></h5>
-                <div class="xiala">
+                <h5>购物车<span> 0 </span>件</h5>
+                <h5 class="wx">微信端</h5>
+                <div class="xiala wximg"><img src="img/qrcode.png" width="90" height="90"/></div>
+                <h5 class="mob">APP</h5>
+                <div class="xiala mobimg">
+                <img src="img/mob.png" width="90" height="90" />
+                <h3>扫描二维码</h3>
+                <p>下载手机客户端</p>
+                </div>
+                <h5 class="saler">卖家中心<i class='saleri'></i></h5>
+                <div class="xiala saler_datail">
                     <ul>
                         <li><a href="#">商家入驻</a></li>
                         <li><a href="#">已卖出的商品</a></li>
                         <li><a href="#">管理商品</a></li>
                     </ul>
                 </div>
-                <h5>网站导航<i></i></h5>
-                <div class="xiala">
+                <h5 class="daohang">网站导航<i class='daohangi'></i></h5>
+                <div class="xiala daohang_detail">
                     <ul>
                         <li>
                             <h3>买酒</h3>
@@ -48,10 +52,10 @@
                                 <a href="#">洋酒</a>
                                 <a href="#">黄酒</a>
                                 <a href="#">整箱</a>
-                                <a href="#">婚庆</a>
+                                <a href="#" >婚庆</a>
                             </div>
                         </li>
-                        <li>
+                        <li class="pingpai">
                             <h3>品牌</h3>
                             <div class="xiala_item1">
                                 <a href="#">茅台</a>
@@ -67,7 +71,7 @@
                         </li>
                         <li>
                             <h3>其他</h3>
-                            <div class="xiala_item1">
+                            <div class="xiala_item1 ">
                                 <a href="#">帮助中心</a>
                                 <a href="#">品牌资讯</a>
                                 <a href="#">品牌导航</a>
@@ -83,28 +87,27 @@
             </div>  
         </div> 
     </div>
-    <img src="img/dt.jpg" style="width:100%;"
+    <img src="img/dt.jpg" style="width:100%;height:90px;"
     />
     <!-- 头部搜索 -->
     <div class="top_search">
         <div class="container">
             <img src="img/logo.png" />
             <img src="img/gif.gif" />
-            <div class="fl">
+            <div class="fl form-search">
                 <input type="text" /><button>搜索</button>
             </div>
-            <div>
-                <ul class="fl">
-                <li>西凤</li>
-                <li>青稞酒</li>
-                <li>洋酒</li>
-                <li>习酒</li>
-                <li>小糊涂仙</li>
-                <li>张裕</li>
-                <li>拉菲</li>
-                <li>萤酒</li>
-                <li>华夏长城</li>
-            </ul>
+            <div class="reci fl">
+                <a href="#">西凤</a>
+                <a href="#">青稞酒</a>
+                <a href="#">洋酒</a>
+                <a href="#">习酒</a>
+                <a href="#">小糊涂仙</a>
+                <a href="#">酒鬼酒</a>
+                <a href="#">张裕</a>
+                <a href="#">拉菲</a>
+                <a href="#">萤酒</a>
+                <a href="#">华夏长城</a>
             </div>
             <img src="img/top_search_right.png" alt="" />   
         </div>
@@ -202,6 +205,7 @@
                 <li><a href="#"></a></li>
             </ul>
         </div>
+    </div>
     <div class="small-banner"></div>
     <div class="footer">
         <div class="ensure">
@@ -342,8 +346,8 @@
             </div>
         </div>
     </div>
-</div>
 </body>
 <script src="lib/jquery-3.2.1.js"></script>
 <script src="js/index.js"></script>
+<script src="js/lunbo.js"></script>
 </html>
