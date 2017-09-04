@@ -1,8 +1,6 @@
 var silde=document.querySelector('.silde');
 var ul=document.querySelector('.silde-items');
-console.log(ul);
 var lis=ul.children;
-console.log(lis);
 var index=0;
 var lastindex=0;
 var len=lis.length;

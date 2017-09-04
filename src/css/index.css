@@ -86,17 +86,117 @@
 
 .top_search .reci a:first-child { color: #DD0207; }
 
+.top_search .reci a:hover { color: #f00f34; }
+
 .nav-bar { overflow: hidden; border-bottom: 1px solid #DD0207; }
 
-.nav-bar .categorys { width: 200px; }
+.nav-bar .categorys { position: absolute; width: 200px; }
 
 .nav-bar .categorys .cate-all { height: 35px; width: 200px; background: #DD0207; color: #fff; font-size: 16px; text-align: center; line-height: 35px; }
 
 .nav-bar .categorys .cate-all a { color: #fff; }
 
+.nav-bar .mc { position: absolute; top: 36px; left: 0; width: 200px; height: 481px; overflow: visible; border: 0; background-color: #3d4851; padding-top: 4px; padding-bottom: 6px; z-index: 9999; }
+
+.nav-bar .mc .item { width: 200px; height: 81px; border-bottom: 1px solid #323b42; padding-left: 16px; box-sizing: border-box; }
+
+.nav-bar .mc .item .baijiu, .nav-bar .mc .item .putiaojiu, .nav-bar .mc .item .yangjiu, .nav-bar .mc .item .huangjiu, .nav-bar .mc .item .lihe, .nav-bar .mc .item .hunqing { float: left; display: block; width: 21px; height: 21px; background: url(../img/baijiu1.png) no-repeat; }
+
+.nav-bar .mc .item .putiaojiu { background: url(../img/putaojiu1.png) no-repeat; }
+
+.nav-bar .mc .item .yangjiu { background: url(../img/yangjiu1.png) no-repeat; }
+
+.nav-bar .mc .item .huangjiu { background: url(../img/huangjiu1.png) no-repeat; }
+
+.nav-bar .mc .item .putiaojiu { background: url(../img/putaojiu1.png) no-repeat; }
+
+.nav-bar .mc .item .lihe { background: url(../img/lihe1.png) no-repeat; }
+
+.nav-bar .mc .item .hunqing { background: url(../img/xi1.png) no-repeat; }
+
+.nav-bar .mc .item h3 { font-size: 14px; font-weight: bold; overflow: hidden; color: #fff; position: relative; padding: 19px 0 12px; }
+
+.nav-bar .mc .item p > a { color: #FFFFFF; font-size: 13px; padding: 3px 4px; }
+
+.nav-bar .mc .item a { font-size: 13px; color: #fff; }
+
+.nav-bar .mc .item .activenav { color: #323b42; background: #FFFFFF; border-radius: 2px; }
+
+.nav-bar .mc .item .category-details { background: #fff; position: absolute; top: 0px; left: 200px; width: 780px; display: none; }
+
+.nav-bar .mc .item .category-details .subitem { float: left; width: 600px; min-height: 491px; display: table; }
+
+.nav-bar .mc .item .category-details .subitem dl { overflow: hidden; zoom: 1; width: 540px; margin-left: 30px; padding: 15px 0; display: inline-block; vertical-align: top; border-bottom: 1px dashed #dbdbdb; }
+
+.nav-bar .mc .item .category-details .subitem dl dt { margin-right: 22px; border-bottom: 1px solid #313131; padding-bottom: 15px; font-size: 14px; color: #313131; font-weight: bold; }
+
+.nav-bar .mc .item .category-details .subitem dl dd { overflow: hidden; padding: 15px 0; }
+
+.nav-bar .mc .item .category-details .subitem dl dd > a { float: left; display: block; width: 90px; height: 24px; color: #666; }
+
+.nav-bar .mc .item .category-details .cate-right { width: 180px; float: left; background-color: #f7f7f7; height: 490px; }
+
+.nav-bar .mc .item .category-details .cate-right h5 { line-height: 38px; text-align: center; font-size: 12px; color: #3e3a39; }
+
+.nav-bar .mc .item .category-details .cate-right > a { color: #666; }
+
+.nav-bar .mc .item .category-details .cate-right img { width: 180px; height: 321px; border: 0 none; display: block; font-size: 0; vertical-align: top; }
+
+.nav-bar .nav { padding-left: 200px; }
+
 .nav-bar .nav li { float: left; text-align: center; line-height: 35px; margin-right: 78px; }
 
 .nav-bar .nav li:first-child { margin-left: 56px; }
+
+.nav-bar .nav li a { color: #373a40; }
+
+.nav-bar .nav li a:hover { color: #f00f34; }
+
+.right-side { height: 100%; width: 40px; background-color: #2a2a2e; z-index: 999999; position: fixed; z-index: 999; top: 0; right: 0; }
+
+.right-side .right-side-menu ul { position: absolute; }
+
+.right-side .right-side-menu .menu-top { top: 15%; }
+
+.right-side .right-side-menu .menu-top span { background-color: #494949; display: none; position: absolute; right: 60px; opacity: 1; top: 0; width: 90px; height: 50px; line-height: 50px; text-align: center; color: #fff; box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); }
+
+.right-side .right-side-menu .menu-top li { padding-top: 10px; position: relative; }
+
+.right-side .right-side-menu .menu-top .side-point { display: none; }
+
+.right-side .right-side-menu .menu-top b { border-bottom: 1px solid #505053; display: block; }
+
+.right-side .right-side-menu .menu-top i { display: block; height: 40px; }
+
+.right-side .right-side-menu .menu-top s { display: block; width: 19px; height: 19px; margin: auto; background: url(../img/right_nav.png) no-repeat; }
+
+.right-side .right-side-menu .menu-top b { position: relative; left: -1px; top: 0px; display: block; width: 19px; margin: auto; }
+
+.right-side .right-side-menu .menu-top p { color: #fff; padding: 3px 14px; margin: 2px 0; font-size: 12px; }
+
+.right-side .right-side-menu .menu-top em { text-align: center; display: block; padding: 0 3px; width: 14px; height: 20px; line-height: 20px; border-radius: 10px; background-color: #e3393c; color: #fff; margin: auto; font-size: 12px; }
+
+.right-side .right-side-menu .menu-top .user > s { background-position: -1403px -26px; }
+
+.right-side .right-side-menu .menu-top .cart > s { background-position: -1429px 0px; }
+
+.right-side .right-side-menu .menu-top .asset > s { background-position: -1429px -26px; }
+
+.right-side .right-side-menu .menu-top .at-goods > s { background-position: -1455px 0px; }
+
+.right-side .right-side-menu .menu-top .history > s { background-position: -1455px -26px; }
+
+.right-side .right-side-menu .menu-top #right_cart { padding-top: 10px; width: 40px; height: 120px; }
+
+.right-side .right-side-menu .menu-top #right_cart > i { height: 30px; }
+
+.right-side .right-side-menu .menu-top .online-service { width: 50px; height: 50px; float: left; font-size: 12px; line-height: 10px; }
+
+.right-side .right-side-menu .menu-top .online-service em { background: none; }
+
+.right-side .right-side-menu .menu-top .online-service .qq-img { width: 18px; height: 18px; margin-left: 15px; margin-top: 8px; }
+
+.right-side .side-content { display: none; }
 
 .slide-box .silde { height: 491px; }
 
@@ -145,6 +245,8 @@
 .service .zjicon > dd { margin-bottom: 20px; }
 
 .service dl { float: left; }
+
+.service .app, .service .weixin { text-align: center; }
 
 .service dt { font-size: 15px; color: #313131; width: 141px; height: 36px; font-weight: bold; line-height: 36px; }
 
