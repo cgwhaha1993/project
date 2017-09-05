@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>登录</title>
+</head>
+<body>
+    <div class="output">用户名和密码不匹配</div>
+    用户名：<input type="text" class="phone" /><br />
+    密码：<input type="password" class="password" /><br />
+    <input type="checkbox" />自动登录<br />
+    <a href="#">忘记密码</a><br />
+    <button class="btn">登录</button><br />
+    <script src="../lib/jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+    $('.output').css('display', 'none');
+    $('.btn').on('click',function(){
+        $.ajax({  
+            type: "GET",  
+            url: "../api/login.php",  
+            data: {'phone':$('.phone').val(),'password':$('.password').val()},    
+            success: function(result){  
+               if(result=='fail'){
+                   $('.output').css('display', 'block');
+                   return false;
+                }  
+            } 
+        })
+    });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>注册</title>
+    </head>
+    <body>
+        <form action="">
+            手机号码：<input type="text" class="phone" />
+            <label id="phone-info" >请输入号码</label>
+            <label id="phone-success"></label>
+            <label id="phone-error">请输入正确的手机号码</label>
+            <label id="phoneexit">手机已经存在请输入其他手机</label>
+            <br/>
+            图形验证：<input type="text" class="yanzheng" />
+            <div class="yanzhengma" style="width:50px;height:50px"></div>
+            <label id="yanzheng-success"></label>
+            <label id="yanzheng-error">请输入正确的验证码</label>
+            <label id="yanzheng-info">请输入验证码</label>
+            <br />
+            请设置密码：<input type="password" class="mima" />
+            <label id="mima-success"></label>
+            <label id="mima-error"><span>密码长度只能在6-20位字符之间，不包含空格</span></label>
+            <label id="mima-info"><span>6-20位字符，可使用字母、数字或符号的组合,，不建议使用纯字母、纯数字、纯符号</span></label>
+            <br />
+            请确认密码：<input type="password" class="queren" />
+            <label id="queren-info"><span>请再次输入密码</span></label>
+            <label id="queren-error">两次输入密码不一致</label>
+            <br/>
+            <label id="queren-success"></label>
+            <input type="checkbox" />我已阅读并同意《<a href="#">用户注册协议</a>》<br />
+            <button id="btn">立即注册</button>
+        </form>
+        <script src="../lib/jquery-3.2.1.js"></script>
+        <script type="text/javascript">
+            $('label').css('display','none');
+            $('.phone').focus(function(event) {
+                    $('#phone-info').css('display', 'block');
+                    $('#phone-error').css('display', 'none');
+                });
+            $('.phone').on('input',function() {
+                    $('#phone-info').css('display', 'none');
+                });
+            $('.phone').on('change',function(){
+                $phone=$('.phone').val();
+                var reg=/^1[34578]\d{9}$/;
+                if(!reg.test($phone)){
+                        $('#phone-error').css('display', 'block');
+                        $('#phone-info').css('display', 'none');
+                        return false;
+                    }
+            });
+            $('#btn').on('click',function(){
+                $phone=$('.phone').val();
+                // console.lbtnog($phone)
+                 $.ajax({  
+                     type: "GET",  
+                     url: "../api/reg.php",  
+                     data: {'phone':$phone,'password':$('.mima').val()},  
+                     // dataType: "json",  
+                     success: function(result){  
+                        console.log(result);
+                        if(result=='no'){
+                            $('#phoneexit').css('display', 'block');
+                            return false;
+                         }  
+                     }  
+                  })
+            }).focus(function(event) {
+                $('label').css('display','none');
+            });
+            var $y=$('.yanzhengma');
+            $y.html(parseInt(Math.random()*10000+1));
+            if($y.text()*1<10){
+                $y.html('000'+$y.text());
+            }
+            else if($y.text()*1<100){
+                $y.html('00'+$y.text());
+            }
+            else if($y.text()*1<1000){
+                $y.html('0'+$y.text());
+            }
+            $y.on('click',function(){
+                $y.html(parseInt(Math.random()*10000+1));
+                if($y.text()*1<10){
+                    $y.html('000'+$y.text());
+                    
+                }
+                else if($y.text()*1<100){
+                    $y.html('00'+$y.text());
+                    
+                }
+                else if($y.text()*1<1000){
+                    $y.html('0'+$y.text());
+                    
+                }
+            })
+            
+            $('.yanzheng').on('change',function(){
+                if($yhi.text()!=$('.yanzheng').val()){
+                    $('#yanzheng-error').css('display', 'block');
+                    return false;
+                }else{
+                    $('#yanzheng-error').css('display', 'none');
+                }
+            }).focus(function() {
+                $('#yanzheng-error').css('display', 'none');
+            });
+            
+            $('.mima').focus(function(event) {
+                    $('#mima-info').css('display', 'block');
+                    $('#mima-error').css('display', 'none');
+            });
+            $('.mima').on('input',function() {
+                    $('#mima-info').css('display', 'none');
+                });
+            $('.mima').on('change',function(){
+                $mima=$('.mima').val();
+                var reg=/^\S{6,19}$/;
+                if(!reg.test($mima)){
+                        $('#mima-error').css('display', 'block');
+                        $('#mima-info').css('display', 'none');
+                        return false;
+                }
+            })
+            $('.queren').focus(function(event) {
+                    $('#queren-info').css('display', 'block');
+                    $('#mima-error').css('display', 'none');
+            });
+            $('.queren').on('input',function(){
+                $('#queren-info').css('display', 'none');
+            });
+            $('.queren').on('change',function(){
+                $queren=$('.queren').val();
+                if($queren!=$mima){
+                        $('#mima-error').css('display', 'block');
+                        $('#queren-info').css('display', 'none');
+                        return false;
+                    }
+            })
+        </script>
+    </body>
+</html>
