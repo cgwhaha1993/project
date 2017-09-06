@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* sass变量 用于编写整个项目所有公共变量 */
-.top_title { color: #7f7f7a; padding-top: 9px; padding-bottom: 12px; }
+.top_title { color: #7f7f7a; padding-top: 9px; }
 
 .top_title .xiala { display: none; }
 
@@ -154,29 +154,39 @@
 
 .nav-bar .nav > li a:hover { color: #f00f34; }
 
+.slide { position: relative; width: 100%; height: 491px; overflow: hidden; position: relative; }
+
+.slide > ul { height: 491px; }
+
+.slide .page { position: absolute; bottom: 15px; z-index: 1; text-align: center; width: 100%; z-index: 3; }
+
+.slide .page > span { display: inline-block; margin: 0 5px; background: #fff; text-align: center; cursor: default; width: 12px; height: 12px; vertical-align: middle; border-radius: 100%; }
+
+.slide .cur { background-color: transparent; border: 3px solid #fff; }
+
 .right-side { height: 100%; width: 40px; background-color: #2a2a2e; z-index: 999999; position: fixed; z-index: 999; top: 0; right: 0; }
 
 .right-side .right-side-menu ul { position: absolute; }
 
 .right-side .right-side-menu .menu-top { top: 15%; }
 
-.right-side .right-side-menu .menu-top span { background-color: #494949; display: none; position: absolute; right: 60px; opacity: 1; top: 0; width: 90px; height: 50px; line-height: 50px; text-align: center; color: #fff; box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); }
+.right-side .right-side-menu .menu-top > span { background-color: #494949; display: none; position: absolute; right: 60px; opacity: 1; top: 0; width: 90px; height: 50px; line-height: 50px; text-align: center; color: #fff; box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); }
 
-.right-side .right-side-menu .menu-top li { padding-top: 10px; position: relative; }
+.right-side .right-side-menu .menu-top > li { padding-top: 10px; position: relative; }
 
 .right-side .right-side-menu .menu-top .side-point { display: none; }
 
-.right-side .right-side-menu .menu-top b { border-bottom: 1px solid #505053; display: block; }
+.right-side .right-side-menu .menu-top > b { border-bottom: 1px solid #505053; display: block; }
 
-.right-side .right-side-menu .menu-top i { display: block; height: 40px; }
+.right-side .right-side-menu .menu-top > i { display: block; height: 40px; }
 
-.right-side .right-side-menu .menu-top s { display: block; width: 19px; height: 19px; margin: auto; background: url(../img/right_nav.png) no-repeat; }
+.right-side .right-side-menu .menu-top > s { display: block; width: 19px; height: 19px; margin: auto; background: url(../img/right_nav.png) no-repeat; }
 
-.right-side .right-side-menu .menu-top b { position: relative; left: -1px; top: 0px; display: block; width: 19px; margin: auto; }
+.right-side .right-side-menu .menu-top > b { position: relative; left: -1px; top: 0px; display: block; width: 19px; margin: auto; }
 
-.right-side .right-side-menu .menu-top p { color: #fff; padding: 3px 14px; margin: 2px 0; font-size: 12px; }
+.right-side .right-side-menu .menu-top > p { color: #fff; padding: 3px 14px; margin: 2px 0; font-size: 12px; }
 
-.right-side .right-side-menu .menu-top em { text-align: center; display: block; padding: 0 3px; width: 14px; height: 20px; line-height: 20px; border-radius: 10px; background-color: #e3393c; color: #fff; margin: auto; font-size: 12px; }
+.right-side .right-side-menu .menu-top > em { text-align: center; display: block; padding: 0 3px; width: 14px; height: 20px; line-height: 20px; border-radius: 10px; background-color: #e3393c; color: #fff; margin: auto; font-size: 12px; }
 
 .right-side .right-side-menu .menu-top .user > s { background-position: -1403px -26px; }
 

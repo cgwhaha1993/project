@@ -1,4 +1,4 @@
-document.write('<script src="../lib/jquery-3.2.1.js"></script>');
+// document.write('<script src="../lib/jquery-3.2.1.js"></script>');
 $('.wozj,.wzj_detail').mouseover(function() {
     $('.wzj_detail').show();
     $('.firsti').css('transform', 'rotate(180deg)');
@@ -65,3 +65,45 @@ $lis.each( function(idx, ele) {
          });
      });
 });
+aaa('推荐');
+aaa('帮你选酒');
+aaa('白酒馆');
+function aaa(a){
+    $.ajax({
+        type: 'GET',
+        url: 'api/indexdata.php',
+        data:{
+             'shuoming':a
+        },
+        success:function(d){
+           var $tui=$.parseJSON(d);
+           $.each($tui,function(index, ele) {
+               switch(a){
+                case '推荐':
+                     $('.sul').html($.map($tui,function(ele, idx){
+                            return `<li><img src="${ele.url}"></li>`;
+                     }).join(""));
+                break;
+                case '帮你选酒':
+                    $('.bangul').html($.map($tui,function(ele, idx){
+                            return `<li><img src="${ele.url}"></li>`;
+                     }).join(""));
+                break;
+                case '白酒馆':
+                    $('.baijiuul').html($.map($tui,function(ele, idx){
+                            return `<li><img src="${ele.url}"></li>`;
+                     }).join(""));
+                break;
+
+
+               }
+           });
+          
+        }
+
+    });
+}
+
+
+
+

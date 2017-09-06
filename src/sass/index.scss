@@ -5,7 +5,7 @@
     color:#7f7f7a;
     .xiala{display:none;}
     padding-top:9px;
-    padding-bottom:12px;
+    // padding-bottom:12px;
     a{color:#3e3a39;}
     h4{
     color:rgb(127, 127, 122);
@@ -292,6 +292,38 @@
     }
 }
 
+//轮播图
+.slide{
+    position:relative;
+    width: 100%;
+    height: 491px;
+    overflow: hidden;
+    position: relative;
+    >ul{height: 491px;}
+    .page{
+        position: absolute;
+        bottom: 15px;
+        z-index: 1;
+        text-align: center;
+        width: 100%;
+        z-index: 3;
+        >span{
+            display:inline-block;
+            margin: 0 5px;
+            background: #fff;
+            text-align: center;
+            cursor: default;
+            width: 12px;
+            height: 12px;
+            vertical-align: middle;
+            border-radius: 100%;
+        }
+    }
+    .cur{
+        background-color: transparent;
+        border: 3px solid #fff;
+    }
+}
 //左侧导航条
 .right-side{
     height:100%;
@@ -308,7 +340,7 @@
             }
         .menu-top{
             top:15%;
-            span{
+            >span{
                 background-color: #494949;
                 display:none;
                 position:absolute;
@@ -322,17 +354,17 @@
                 color: #fff;
                 box-shadow: 0 0 5px rgba(0, 0, 0, .2);
             }
-            li{padding-top:10px;position:relative;}
+            >li{padding-top:10px;position:relative;}
             .side-point{display:none;}
-            b{
+            >b{
                border-bottom: 1px solid #505053;
                 display: block;  
             }
-            i{
+            >i{
                 display: block;
                 height: 40px;
             }
-            s{
+            >s{
                 display:block;
                 width:19px;
                 height:19px;
@@ -340,7 +372,7 @@
                background:url(../img/right_nav.png) no-repeat;
 
             }
-            b{
+            >b{
                 position:relative;
                 left:-1px;
                 top:0px;
@@ -348,13 +380,13 @@
                 width:19px;
                 margin:auto;
             }
-            p{
+            >p{
             color: #fff;
             padding: 3px 14px;
             margin: 2px 0;
             font-size:12px;
             }
-            em{
+            >em{
             text-align:center;
             display:block;
             padding: 0 3px;
