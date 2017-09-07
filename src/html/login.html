@@ -3,16 +3,75 @@
 <head>
     <meta charset="UTF-8" />
     <title>登录</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/reg.css">
 </head>
 <body>
-    <div class="output">用户名和密码不匹配</div>
-    用户名：<input type="text" class="phone" /><br />
-    密码：<input type="password" class="password" /><br />
-    <input type="checkbox" />自动登录<br />
-    <a href="#">忘记密码</a><br />
-    <button class="btn">登录</button><br />
-    <script src="../lib/jquery-3.2.1.js"></script>
-    <script type="text/javascript">
+   <div class="w">
+    <div id="logo">
+        <div class="container">
+            <a href="#"><img src="../img/banner1.jpg" alt="Himall" height="60" style="margin-left: 145px;"></a><b></b>
+            <div id="entry">
+                <div class="mc">
+                    <div id="entry-bg">
+                        <img src="../img/banner1.jpg" width="460" height="400" >
+                    </div>
+                    <div class="tab_content">
+                        <ul class="tab_tit">
+                            <li class="active">
+                                <a href="#" class="sao">扫码登录</a>
+                            </li>
+                            <li >
+                                <a href="#">账户登录</a>
+                            </li>
+                        </ul>
+                        <div class="tab_cont">
+                            <section class="hidden">
+                                <div class="saom_login">
+                                    <p><img style="width:159px; height:159px;" src="../img/banner1.jpg" /></p>
+                                    <span>打开<a href="" target="_blank">中酒网App</a></span>
+                                    <span class="fr">扫描二维码</span>
+                                </div>
+                                <span class="anquandenglu"><img src="../img/dengluanquan.png" /></span>
+                            </section>
+                            <section  >
+                                <div class="form ">
+                                    <div class="tips ">
+                                        <i></i>
+                                        <em>公共场所不建议自动登录，以防账号丢失</em>
+                                    </div>
+                                    <div class="item fore1">
+                                        <div class="renicon"></div>
+                                        <input type="text" class="text" />
+                                    </div>
+                                    <div class="item fore2">
+                                        <div class="passwordicon"></div>
+                                        <input type="text" class="text"/>
+                                    </div>
+                                    <div class="item fore4">
+                                        <input type="checkbox" class="mar" />自动登录
+                                        <a href="#" class="fr">忘记密码</a>
+                                    </div>
+                                    <button class="btn-entry">登录</button>
+                                </div>
+                            </section>
+                        </div>
+                    </div>  
+                </div>
+                <div class="coagent">
+                    <img src="../img/denglu.png">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="footer" style="padding-top:30px;">
+        <div class="copyright">Copyright © 2017 &nbsp;&nbsp;中酒网&nbsp;版权所有</div>
+    </div>
+
+</div>
+<script src="../lib/jquery-3.2.1.js"></script>
+<script type="text/javascript">
     $('.output').css('display', 'none');
     $('.btn').on('click',function(){
         $.ajax({  
@@ -20,14 +79,14 @@
             url: "../api/login.php",  
             data: {'phone':$('.phone').val(),'password':$('.password').val()},    
             success: function(result){  
-               if(result=='fail'){
-                   $('.output').css('display', 'block');
-                   return false;
-                }  
-            } 
-        })
+             if(result=='fail'){
+                 $('.output').css('display', 'block');
+                 return false;
+             }  
+         } 
+     })
     });
 
-    </script>
+</script>
 </body>
 </html>

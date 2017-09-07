@@ -33,13 +33,13 @@ var browserSync = require('browser-sync');
 gulp.task('server',function(){
     browserSync({
         // 静态服务器
-        server:'./src/',
+        // server:'./src/',
 
-        // // 代理服务器
-        // proxy:'http://localhost:10000',
+        // 代理服务器
+        proxy:'http://localhost/1234/project/src/index.html',
 
         // 端口
-        port:2008,
+        // port:2008,
 
         // 监听文件修改，自动刷新浏览器
         files:['./src/**/*.html','./src/css/*.css','./src/api/*.php']

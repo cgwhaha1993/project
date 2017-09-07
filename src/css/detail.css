@@ -1,0 +1,13 @@
+#product-intro { position: relative; z-index: 10; padding-left: 425px; min-height: 500px; background-color: #fff; padding-top: 5px; border-bottom: 1px solid #ddd; }
+
+#product-intro #name { zoom: 1; width: 490px; }
+
+#product-intro #name > h1 { font-size: 18px; font-weight: normal; color: #222222; }
+
+#product-intro #name > strong { display: block; color: #ff0000; font-size: 14px; font-weight: normal; }
+
+#product-intro #summary { float: left; width: 490px; font-size: 14px; }
+
+#product-intro #summary li { padding: 8px 0; overflow: hidden; }
+
+#product-intro #preview { position: absolute; top: 10px; left: 20px; width: 352px; }
