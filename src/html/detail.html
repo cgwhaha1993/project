@@ -4,31 +4,86 @@
         <meta charset="UTF-8" />
         <title>详情页</title>
         <link rel="stylesheet" type="text/css" href="../css/base.css" />
+        <link rel="stylesheet" type="text/css" href="../css/detail.css">
     </head>
     <body>
         <div class="container">
             <div id="product-intro">
                 <div id="name">
-                    <h1></h1>
+                    <h1>中酒网无方购物带</h1>
                 </div>
                 <div class="cl">
                     <ul id="summary">
                         <li id="summary-price">
-                            <div class="t">
-                                <div class="dt">价格</div>
-                                <h2 class='price'></h2>
+                            <div class="t cl">
+                                <div class="dt fl">价格</div>
+                                <h2 class='price fl'><span>￥</span>67</h2>
+                            </div>
+                            <div class="b">
+                                <ul class="fl">
+                                    <li>销量
+                                    <span>34343个</span></li>
+                                    <li>
+                                        评价<span>23</span>
+                                    </li>
+                                    <li>评分</li>
+                                </ul>
                             </div>
                         </li>
-                        <li id="summary-promotion"></li>
-                        <li id="summary-service"></li>
-                        <li id="summary-service"></li>
-                        <li id="summary-service"></li>
+                        <li id="summary-promotion cl">
+                            <div class="ca fl ">促销</div>
+                            <div class="chumain fl">
+                                <ul>
+                                    <li>单笔订单满99.00元免运费</li>
+                                    <li>满99元送红包</li>
+                                </ul>
+                            </div>
+
+                        </li>
+                        <li id="summary-service">
+                            <div class="ca fl">库存</div>
+                            <p class="fl dd">有货</p>
+                        </li>
+                        <li id="summary-service">
+                            <div class="ca fl">物流</div>
+                            <div class="dd fl">配送至
+                            <select><option value="" selected>广东省</option><option value="">海南省</option>
+                            <option value="">湖北省</option>
+                            </select>
+                            </div>
+                        </li>
+                        <li id="summary-service">
+                            <div class="ca fl">服务</div>
+                            <p class="fl">由中酒自营从北京发货，并提供售后服务</p>
+                        </li>
+                        <li class="shu">
+                            <div class="shu fl">数量</div>
+                            <div class="jiajian">
+                                <input type="number" name="" class="text">
+                            </div>
+                        </li>
+                        <div class="goumian fl">
+                            <button class="btn liji"><a href="shoppingcart.html">立即购买</a></button>
+                            <button class="btn jiaru"><a href="#">加入购物车</a></button>
+                        </div>
                     </ul>
                 </div>
                 <div class="preview">
-                    <div class="jqzoom"></div>
+                    <div class="jqzoom">
+                        <div class="tupian"></div>
+                    </div>
+                    <div class="tupianji">
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+
         </div>
         <script src='../js/cookies.js'></script>
     </body>

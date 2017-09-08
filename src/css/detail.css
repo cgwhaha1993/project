@@ -10,4 +10,34 @@
 
 #product-intro #summary li { padding: 8px 0; overflow: hidden; }
 
-#product-intro #preview { position: absolute; top: 10px; left: 20px; width: 352px; }
+#product-intro #summary #summary-price .dt { font-size: 16px; }
+
+#product-intro #summary #summary-price .t { background: url(http://www.zhongjiu.cn/Areas/Web/Images/price-info_bg.jpg); height: 56px; line-height: 56px; text-align: right; }
+
+#product-intro #summary #summary-price .t > h2 { color: #ee3e1b; padding-left: 10px; font-size: 26px; width: auto; height: 31px; border-right: 1px dotted #a49e9e; line-height: 30px; margin-top: 13px; padding-right: 20px; }
+
+#product-intro #summary #summary-price .b { height: 45px; border-bottom: 1px dashed #cbcad0; width: 100%; margin-top: 10px; }
+
+#product-intro #summary #summary-price .b > ul > li { float: left; width: auto; border-right: 1px solid #a49e9e; padding: 0 30px; }
+
+#product-intro #summary #summary-promotion { width: 100%; }
+
+#product-intro #summary #summary-promotion .dd { font-size: 14px; color: #2d2d2d; }
+
+#product-intro #summary .ca { width: 50px; height: 100%; text-align: left; line-height: 26px; }
+
+#product-intro #summary .text { margin-left: 20px; width: 30px; height: 20px; border: 1px solid #ccc; padding: 2px; text-align: center; }
+
+#product-intro #summary .btn a { position: relative; text-align: center; color: #fff; float: left; overflow: hidden; line-height: 48px; background-color: #ff4d50; border-radius: 5px; padding: 0 15px 0 25px; }
+
+#product-intro #summary .liji { margin-right: 50px; }
+
+#product-intro .preview { position: absolute; top: 10px; left: 20px; width: 352px; }
+
+#product-intro .preview .jqzoom { position: relative; width: 352px; height: 352px; border: 1px solid #ddd; }
+
+#product-intro .preview .tupianji { position: relative; overflow: hidden; margin-top: 20px; width: 352px; height: 76px; border: 1px solid #ddd; }
+
+#product-intro .xiao { overflow: hidden; }
+
+#product-intro .xiao > ul > li { float: left; }

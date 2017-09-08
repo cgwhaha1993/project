@@ -21,19 +21,104 @@
             font-weight: normal;
         }
     }
-     #summary {
+    #summary {
         float: left;
         width: 490px;
         font-size: 14px;
-        li {
+        li{
             padding: 8px 0;
             overflow: hidden;
         }
+        #summary-price{
+            .dt{font-size: 16px;}
+            .t{
+                background: url(http://www.zhongjiu.cn/Areas/Web/Images/price-info_bg.jpg);
+                height: 56px;
+                line-height: 56px;
+                text-align: right;
+                >h2{
+                    color: #ee3e1b;
+                    padding-left: 10px;
+                    font-size: 26px;
+                    width: auto;
+                    height: 31px;
+                    border-right: 1px dotted #a49e9e;
+                    line-height: 30px;
+                    margin-top: 13px;
+                    padding-right: 20px;
+                }
+            }
+            .b{
+                height: 45px;
+                border-bottom: 1px dashed #cbcad0;
+                width: 100%; 
+                margin-top: 10px;   
+                >ul{
+                    >li{
+                    float:left;
+                    width: auto;
+                    border-right: 1px solid #a49e9e;
+                    padding: 0 30px;
+                    }
+                }
+            }
+        }
+        #summary-promotion{
+            width: 100%;
+            .dd{
+                font-size: 14px;
+                color: #2d2d2d;
+            }
+        }
+        .ca{width: 50px;
+                height: 100%;
+                text-align: left;
+                line-height: 26px;
+            }
+        .text {
+            margin-left:20px;
+            width: 30px;
+            height: 20px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            text-align: center;
+        }
+        .btn a {
+            position: relative;
+            text-align: center;
+            color: #fff;
+            float: left;
+            overflow: hidden;
+            line-height: 48px;
+            background-color: #ff4d50;
+            border-radius: 5px;
+            padding: 0 15px 0 25px;
+        }
+         .liji {
+            margin-right: 50px;
+        }
     }
-    #preview {
+    .preview{
         position: absolute;
-        top: 10px;
-        left: 20px;
-        width: 352px;
+    top: 10px;
+    left: 20px;
+    width: 352px;
+        .jqzoom{position:relative;
+            width:352px;
+            height:352px;
+            border:1px solid #ddd;
+        }
+        .tupianji{
+            position: relative;
+            overflow: hidden;
+            margin-top: 20px;
+            width:352px;
+            height:76px;
+            border:1px solid #ddd;
+        }
     }
+.xiao{
+    overflow: hidden;
+    >ul{>li{float: left;}}   
+}
 }

@@ -1,0 +1,39 @@
+.ctop { overflow: hidden; background-color: #eff2f5; }
+
+.ctop > ul { overflow: hidden; }
+
+.ctop > ul > li { float: left; line-height: 35px; }
+
+.ctop > ul > li input { margin-left: 19px; margin-right: 5px; }
+
+.ctop > ul > li:first-child { width: 100px; height: 35px; }
+
+.ctop > ul > li:nth-child(2) { text-align: center; width: 521px; height: 35px; }
+
+.ctop > ul > li:nth-child(3) { text-align: right; width: 129px; height: 35px; }
+
+.ctop > ul > li:nth-child(4) { text-align: center; width: 136px; height: 35px; }
+
+.ctop > ul > li:nth-child(5) { text-align: center; width: 99px; height: 35px; }
+
+.detail { background-color: #FFF; }
+
+.detail > ul { float: left; }
+
+.detail > ul > li { float: left; line-height: 35px; }
+
+.detail > ul > li input { margin-left: 19px; margin-right: 5px; }
+
+.detail > ul > li:first-child { width: 621px; height: 35px; }
+
+.detail > ul > li:nth-child(2) { text-align: right; width: 129px; height: 35px; }
+
+.detail > ul > li:nth-child(3) { text-align: center; width: 136px; height: 35px; }
+
+.detail > ul > li:nth-child(4) { text-align: center; width: 99px; height: 35px; }
+
+.detail button { float: left; }
+
+.detail .shuliang { float: left; width: 34px; height: 18px; margin-left: 0px; margin-right: 0px; text-align: center; margin: 0 auto; }
+
+.detail .four { padding-left: 42px; margin-top: px; box-sizing: border-box; }

@@ -1,0 +1,19 @@
+.output { overflow: hidden; padding-left: 190px; width: 1000px; }
+
+.output > ul { overflow: hidden; }
+
+.output > ul > li { width: 220px; float: left; margin-right: 16px; z-index: 1; position: relative; }
+
+.output > ul > li > img { position: relative; height: 218px; width: 218px; transition: border 0.3s ease-in 0s; text-align: center; }
+
+.output > ul > li .oprice { font-size: 12px; margin-top: 10px; margin-bottom: 10px; }
+
+.output > ul > li .oprice > strong { margin-left: 6px; font-family: verdana; font-size: 14px; color: #f00f34; }
+
+.output > ul > li .oprice > span > b { color: #3cbcba; padding: 0 2px; }
+
+.output > ul > li .pp { font-size: 13px; color: #333; height: 20px; line-height: 20px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; margin-left: 6px; }
+
+.output > ul > li .page > span { display: inline-block; margin: 5px; width: 40px; line-height: 1.8; text-align: center; background-color: #dfdfdf; color: #666; }
+
+.output > ul > li .page > span .active { background-color: #fc0; color: red; }

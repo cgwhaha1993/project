@@ -1,0 +1,60 @@
+.output{
+    overflow:hidden;
+    padding-left:190px;
+    width:1000px;
+    >ul{
+        overflow:hidden;
+        >li{width:220px;
+            float:left;
+            margin-right: 16px;
+            z-index: 1;
+            position: relative;
+            >img{
+                position: relative;
+                height: 218px;
+                width: 218px;
+                transition: border 0.3s ease-in 0s;
+                text-align: center;
+            }
+            .oprice{
+                font-size: 12px;
+                margin-top:10px;
+                margin-bottom: 10px;
+                >strong{
+                    margin-left: 6px;
+                    font-family: verdana;
+                    font-size: 14px;
+                    color: #f00f34;
+                }
+                >span>b{color: #3cbcba;
+                padding: 0 2px;}
+            }
+            .pp{
+                font-size: 13px;
+                color: #333;
+                height: 20px;
+                line-height: 20px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                margin-left: 6px;
+            }
+            .page {
+                >span{
+                    display:inline-block;
+                    margin:5px;width:40px;
+                    line-height:1.8;
+                    text-align: center;
+                    background-color:#dfdfdf;
+                    color:#666;  
+                    .active{
+                        background-color:#fc0;
+                        color:red;
+                    }        
+                }
+            
+            }
+        }
+    }
+}
+
