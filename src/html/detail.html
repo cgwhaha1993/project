@@ -5,10 +5,13 @@
         <title>详情页</title>
         <link rel="stylesheet" type="text/css" href="../css/base.css" />
         <link rel="stylesheet" type="text/css" href="../css/detail.css">
+        <link rel="stylesheet" type="text/css" href="../lib/lxzoom/css/lxzoom.css" />
     </head>
     <body>
-        <div class="container">
-            <div id="product-intro">
+        <div>
+            <!-- <div class="container"> -->
+            <div class="heji">
+                <div id="product-intro">
                 <div id="name">
                     <h1>中酒网无方购物带</h1>
                 </div>
@@ -59,32 +62,173 @@
                         <li class="shu">
                             <div class="shu fl">数量</div>
                             <div class="jiajian">
-                                <input type="number" name="" class="text">
+                                <input type="number" value="1" class="text">
                             </div>
                         </li>
                         <div class="goumian fl">
-                            <button class="btn liji"><a href="shoppingcart.html">立即购买</a></button>
-                            <button class="btn jiaru"><a href="#">加入购物车</a></button>
+                            <button class="btn liji"><a href="#">立即购买</a></button>
+                            <button class="btn jiaru addcar"><a href="#">加入购物车</a></button>
                         </div>
                     </ul>
                 </div>
                 <div class="preview">
                     <div class="jqzoom">
-                        <div class="tupian"></div>
+                        <div class="tupian goods lxzoom">
+                            <img src="" alt="" width="352" height="352"  />
+                        </div>
                     </div>
-                    <div class="tupianji">
+                    <div class="tupianji smallList">
                         <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li class="fl"><img src="" alt="" width="50" height="50"/ class="tupian1"></li>
+                            <li class="fl"><img src="../img/bayue9.jpg" alt="" width="50" height="50"/></li>
+                            <li class="fl"><img src="../img/bayue4.jpg" alt="" width="50" height="50"/></li>
+                            <li class="fl"><img src="../img/bayue3.jpg" alt="" width="50" height="50"/></li>
+                            <li class="fl"><img src="../img/bayue2.jpg" alt="" width="50" height="50"/></li>
                         </ul>
                     </div>
                 </div>
             </div>
-
+            </div>
+            
+            <div class="right-side ">
+            <div class="right-side-menu">
+                <ul class="menu-top">
+                    <li data-tag="user">
+                        <i class="user" id="right_userCenter"><s></s></i>
+                        <span>个人中心</span>
+                    </li>
+                    <b></b>
+                    <li data-tag="cart" arrow class="side-cart" id="right_cart">
+                        <i class="cart end"><s></s></i>
+                        <p>购物车</p>
+                        <span></span>
+                        <em style='margin-top:'>0</em>
+                    </li>
+                    <b></b>
+                    <li data-tag="asset" arrow id="right_asset">
+                        <i class="asset"><s></s></i>
+                        <span>资产中心</span>
+                        <div class="side-point">
+                            该店铺可领优惠券<br />
+                            <a>立即领取</a>
+                        </div>
+                    </li>
+                    <li data-tag="at-goods" arrow id="right_goods">
+                        <i class="at-goods"><s></s></i>
+                        <span>关注商品</span>
+                    </li>
+                    <li data-tag="history" arrow id="right_history">
+                        <i class="history"><s></s></i>
+                        <span>浏览历史</span>
+                    </li>
+                    <li data-tag="customer" id="right_customer">
+                        <b></b><i class="customer">客服</i>
+                        <span>
+                        <a target="_blank" href="#">
+                        <div class="online-service">
+                            <i class="qq-img"></i>
+                            <em class="nini">妮妮</em>
+                        </div>
+                        </a>
+                        <!-- <a target="_blank" href="#" >
+                        <div class="online-service">
+                            <i class="qq-img"></i>
+                            <em class='nini'>佳佳</em>
+                        </div>
+                        </a> -->
+                        </span>
+                    </li>
+                </ul>
+                <ul class="menu-bot">
+                    <li>
+                        <i class="go-top"></i>
+                        <span></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="side-content">
+                <div class="side-cart-c">
+                    <div class="side-bd">
+                        <input type="hidden" value="2" id="hidAuditStatus" />
+                        <input type="hidden" value="1" id="hidSaleStatus" />
+                        <div class="cart-top">
+                            <label><input type="checkbox" name="s-checkAll" checked />全选</label>
+                            <a href="/cart/cart" title="">查看全部</a>
+                        </div>
+                        <div class="cart-list">
+                        <ul id="side-cart-list"></ul>
+                    </div>
+                </div>
+                <div class="side-bt">
+                    <div class="cart-total">
+                        <span class="total-money">￥<em id="s-total-money">0</em></span>
+                        <span class="total-num">已选<em id="s-total-num">0</em>件</span>
+                    </div>
+                    <input type="button" id="toSubmitOrder" value="购物车结算">
+                </div>
+            </div>
+            <div class="side-asset-c">
+                <div class="side-hd">
+                    <a class="side-close" title="关闭">>></a>
+                    <a href="/UserCenter?url=/userCoupon&tar=userCoupon" target="_blank">资产中心</a>
+                </div>
+                <div class="side-bd">
+                    <div class="side-asset-total cl">
+                        <div>
+                            <span>0</span>
+                            <p>我的积分</p>
+                        </div>
+                        <div>
+                            <span id="mycouponcount">0</span>
+                            <p>优惠券</p>
+                        </div>
+                    </div>
+                    <div class="side-asset-list" id="myCouponList">
+                        <p>已领取的优惠券</p>
+                    <ul></ul>
+                </div>
+            </div>
+        </div> 
         </div>
+        </div>
+        </div>
+       <!--  </div> -->
+        
+       
+        <script src="../lib/jquery-3.2.1.js"></script>
         <script src='../js/cookies.js'></script>
+        <!-- <script src='../js/shopping.js'></script> -->
+        <script src="../lib/lxzoom/lxzoom.js"></script>
+        <script src="../js/index.js"></script>
+        <script src="../lib/jquery.fly.min.js"></script>
+        <script>
+            $(function() {
+                var offset = $(".end").offset();
+                $(".addcar").click(function(event){
+                    var addcar = $(this);
+                    var img = addcar.parent().parent().parent().parent().parent().find('img').attr('src');
+                     var flyer = $('<img class="u-flyer" src="'+img+'">').css('z-index',232323);
+                    flyer.fly({
+                        start: {
+                            left: event.pageX,
+                            top: event.pageY-100
+                        },
+                        end: {
+                            left: offset.left+10,
+                            top: offset.top+10,
+                            width: 0,
+                            height: 0
+                        },
+                    });
+                });
+            });
+        </script>
+        
+        <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded',function(){
+            new LxZoom({position:'right'}).init();
+        })
+        </script>
+    
     </body>
 </html>

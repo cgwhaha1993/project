@@ -16,12 +16,13 @@ function show(a,b){
         }).join(''));
         
         $duoshaoye=Math.ceil($lie.total/$qty);
-        for($i=1;$i<=$duoshaoye;$i++){
+        for($i=0;$i<=$duoshaoye;$i++){
             $span=$('<span/>');
             if($i===$yema){
                 $span.addClass('active');
             }
-            $span.html($i);
+            $span.html('');
+            $span.html($i+1);
             $span.appendTo($page);
         }
     }
@@ -33,6 +34,6 @@ $page.on('click','span',function(e){
     console.log(e.target);
     if(e.target.tagName.toLowerCase()=='span'){
         $page.html('');
-        show(e.target.innerHTML,5);
+        show(e.target.innerHTML,2);
     }
 })

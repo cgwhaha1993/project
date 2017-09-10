@@ -91,47 +91,47 @@ function aaa(a) {
                     switch (a) {
                         case '推荐':
                             $('.sul').html($.map($tui, function(ele, idx) {
-                                return `<li><a href=./html/detail.html?id="${encodeURI(ele.id)}"&url="${encodeURI(ele.url)}"&price="${encodeURI(ele.price)}"&title="${encodeURI(ele.title)}"&shuoming="${encodeURI(ele.shuoming)}"><img src="${ele.url}"></a></li>`;
-                            }).join(""));
+                                return `<li><a href=./html/detail.html?id=${encodeURI(ele.id)}&url=${ele.url}&price=${encodeURI(ele.price)}&title=${encodeURI(ele.title)}&shuoming=${encodeURI(ele.shuoming)}><img src=${ele.url}></a></li>`;
+                            }).join(" "));
                             break;
                         case '帮你选酒':
                             $('.bangul').html($.map($tui, function(ele, idx) {
-                                 return `<li><a href=./html/detail.html?id="${encodeURI(ele.id)}"&url="${encodeURI(ele.url)}"&price="${encodeURI(ele.price)}"&title="${encodeURI(ele.title)}"&shuoming="${encodeURI(ele.shuoming)}"><img src="${ele.url}"></a></li>`;
+                                 return `<li><a href=./html/detail.html?id=${encodeURI(ele.id)}&url=${encodeURI(ele.url)}&price=${encodeURI(ele.price)}&title=${encodeURI(ele.title)}&shuoming=${encodeURI(ele.shuoming)}><img src=${ele.url}></a></li>`;
                             }).join(""));
                             break;
                         case '帮你选酒1':
                             $('.bangul1').html($.map($tui, function(ele, idx) {
-                                 return `<li><a href=./html/detail.html?id="${encodeURI(ele.id)}"&url="${encodeURI(ele.url)}"&price="${encodeURI(ele.price)}"&title="${encodeURI(ele.title)}"&shuoming="${encodeURI(ele.shuoming)}"><img src="${ele.url}"></a></li>`;
+                                  return `<li><a href=./html/detail.html?id=${encodeURI(ele.id)}&url=${encodeURI(ele.url)}&price=${encodeURI(ele.price)}&title=${encodeURI(ele.title)}&shuoming=${encodeURI(ele.shuoming)}><img src=${ele.url}></a></li>`;
                             }).join(""));
                             break;
                         case '白酒馆':
                             $('.baijiuul').html($.map($tui, function(ele, idx) {
-                                 return `<li><a href=./html/detail.html?id="${encodeURI(ele.id)}"&url="${encodeURI(ele.url)}"&price="${encodeURI(ele.price)}"&title="${encodeURI(ele.title)}"&shuoming="${encodeURI(ele.shuoming)}"><img src="${ele.url}"></a></li>`;
+                                  return `<li><a href=./html/detail.html?id=${encodeURI(ele.id)}&url=${encodeURI(ele.url)}&price=${encodeURI(ele.price)}&title=${encodeURI(ele.title)}&shuoming=${encodeURI(ele.shuoming)}><img src=${ele.url}></a></li>`;
                             }).join(""));
                             break;
                         case '白酒馆1':
                             $('.baijiuul1').html($.map($tui, function(ele, idx) {
-                                 return `<li><a href=./html/detail.html?id="${encodeURI(ele.id)}"&url="${encodeURI(ele.url)}"&price="${encodeURI(ele.price)}"&title="${encodeURI(ele.title)}"&shuoming="${encodeURI(ele.shuoming)}"><img src="${ele.url}"></a></li>`;
+                                  return `<li><a href=./html/detail.html?id=${encodeURI(ele.id)}&url=${encodeURI(ele.url)}&price=${encodeURI(ele.price)}&title=${encodeURI(ele.title)}&shuoming=${encodeURI(ele.shuoming)}><img src=${ele.url}></a></li>`;
                             }).join(""));
                             break;
                         case '葡萄酒':
                             $('.putaojiuul').html($.map($tui, function(ele, idx) {
-                                 return `<li><a href=./html/detail.html?id="${encodeURI(ele.id)}"&url="${encodeURI(ele.url)}"&price="${encodeURI(ele.price)}"&title="${encodeURI(ele.title)}"&shuoming="${encodeURI(ele.shuoming)}"><img src="${ele.url}"></a></li>`;
+                                 return `<li><a href=./html/detail.html?id=${encodeURI(ele.id)}&url=${encodeURI(ele.url)}&price=${encodeURI(ele.price)}&title=${encodeURI(ele.title)}&shuoming=${encodeURI(ele.shuoming)}><img src=${ele.url}></a></li>`;
                             }).join(""));
                             break;
                         case '葡萄酒1':
                             $('.putaojiuul1').html($.map($tui, function(ele, idx) {
-                                 return `<li><a href=./html/detail.html?id="${encodeURI(ele.id)}"&url="${encodeURI(ele.url)}"&price="${encodeURI(ele.price)}"&title="${encodeURI(ele.title)}"&shuoming="${encodeURI(ele.shuoming)}"><img src="${ele.url}"></a></li>`;
+                                  return `<li><a href=./html/detail.html?id=${encodeURI(ele.id)}&url=${encodeURI(ele.url)}&price=${encodeURI(ele.price)}&title=${encodeURI(ele.title)}&shuoming=${encodeURI(ele.shuoming)}><img src=${ele.url}></a></li>`;
                             }).join(""));
                             break;
                         case '洋酒':
                             $('.yangjiuul').html($.map($tui, function(ele, idx) {
-                                 return `<li><a href=./html/detail.html?id="${encodeURI(ele.id)}"&url="${encodeURI(ele.url)}"&price="${encodeURI(ele.price)}"&title="${encodeURI(ele.title)}"&shuoming="${encodeURI(ele.shuoming)}"><img src="${ele.url}"></a></li>`;
+                                  return `<li><a href=./html/detail.html?id=${encodeURI(ele.id)}&url=${encodeURI(ele.url)}&price=${encodeURI(ele.price)}&title=${encodeURI(ele.title)}&shuoming=${encodeURI(ele.shuoming)}><img src=${ele.url}></a></li>`;
                             }).join(""));
                             break;
                         case '洋酒1':
                             $('.yangjiuul1').html($.map($tui, function(ele, idx) {
-                                 return `<li><a href=./html/detail.html?id="${encodeURI(ele.id)}"&url="${encodeURI(ele.url)}"&price="${encodeURI(ele.price)}"&title="${encodeURI(ele.title)}"&shuoming="${encodeURI(ele.shuoming)}"><img src="${ele.url}"></a></li>`;
+                                  return `<li><a href=./html/detail.html?id=${encodeURI(ele.id)}&url=${encodeURI(ele.url)}&price=${encodeURI(ele.price)}&title=${encodeURI(ele.title)}&shuoming=${encodeURI(ele.shuoming)}><img src=${ele.url}></a></li>`;
                             }).join(""));
                             break;
                     }
@@ -169,32 +169,30 @@ var $len = $(".neirong>ul>.neirong1").length;
 var $idx = 0;
 
 function nextbox() {
-    if ($idx > $len - 1) {
+    if ($idx<0) {
         $idx = 0;
     }
     $neirongul.stop().animate({
-        left: -$idx * 220 + "px"
+        left: -$idx * 220 
     });
 }
 
 function prevbox() {
-    console.log($len);
-    if ($idx == -1) {
-        $idx = $len - 1;
+    if ($idx == 3) {
+        $idx = 0;
     }
     $neirongul.stop().animate({
-        left: -$idx * 220 + "px"
+        left: -$idx * 220 
     });
 }
 $('.tubiao>i:first-child').on('click', function() {
-    $idx++;
-    nextbox();
-    console.log($idx);
-})
-$('.tubiao>i:nth-child(2)').on('click', function() {
     $idx--;
+    nextbox();
+})
+
+$('.tubiao>i:nth-child(2)').on('click', function() {
+    $idx++;
     prevbox();
-    console.log($idx);
 })
 $('.floors').on('click', 'li', function() {
     console.log($(this));
@@ -203,13 +201,31 @@ $('.floors').on('click', 'li', function() {
     }
 })
 $('.content_right_img>ul').eq(0).css('display', 'block');
-$('.floor_title>ul>li').hover(function() {
-    var idx = $(this).index();
-    $(this).addClass('liactive');
-    console.log($('.content_right_img>ul').eq(idx));
-    $('.content_right_img>ul').eq(idx).css('display', 'block');
-}, function() {
-    var idx = $(this).index();
-    $(this).removeClass('liactive');
-    $('.content_right_img>ul').eq(idx).css('display', 'none');
-});
+// $('.floor_title>ul>li').hover(function() {
+//     var idx = $(this).index();
+//     $(this).addClass('liactive');
+//     console.log($('.content_right_img>ul').eq(idx));
+//     $('.content_right_img>ul').eq(idx).css('display', 'block');
+// }, function() {
+//     var idx = $(this).index();
+//     $(this).removeClass('liactive');
+//     $('.content_right_img>ul').eq(idx).css('display', 'none');
+// });
+// var liss=document.querySelectorAll('.floor_title>ul>li');
+// var lcontent=document.querySelectorAll('.content_right_img>ul');
+// console.log(lcontent)
+// for(var i=0;i<liss.length;i++){
+//         liss[i].index=i;
+//     liss[i].onmouseenter=function(){
+//         clearStyle();
+//         liss[this.index].classList.add('liactive');
+//         lcontent[this.index].style.display='block';
+//     }
+// }
+// function clearStyle(){
+//     console.log(liss);
+//     for(var i=0;i<liss.length;i++){
+//         liss[i].classList.remove('liactive');
+//         lcontent[i].style.display = "none";
+//     }
+// }

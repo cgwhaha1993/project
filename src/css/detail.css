@@ -1,3 +1,5 @@
+.heji { width: 1000px; margin: 0 auto; }
+
 #product-intro { position: relative; z-index: 10; padding-left: 425px; min-height: 500px; background-color: #fff; padding-top: 5px; border-bottom: 1px solid #ddd; }
 
 #product-intro #name { zoom: 1; width: 490px; }
@@ -36,8 +38,60 @@
 
 #product-intro .preview .jqzoom { position: relative; width: 352px; height: 352px; border: 1px solid #ddd; }
 
-#product-intro .preview .tupianji { position: relative; overflow: hidden; margin-top: 20px; width: 352px; height: 76px; border: 1px solid #ddd; }
+#product-intro .preview .tupianji { position: relative; overflow: hidden; margin-top: 20px; width: 352px; height: 50px; border: 1px solid #ddd; }
+
+#product-intro .preview .tupianji > ul > li { margin-right: 20px; }
 
 #product-intro .xiao { overflow: hidden; }
 
 #product-intro .xiao > ul > li { float: left; }
+
+.right-side { height: 100%; width: 40px; background-color: #2a2a2e; z-index: 999999; position: fixed; z-index: 999; top: 0; right: 0; }
+
+.right-side .right-side-menu ul { position: absolute; }
+
+.right-side .right-side-menu .menu-top { top: 20%; }
+
+.right-side .right-side-menu .menu-top > li { padding-top: 10px; position: relative; width: 40px; height: 40px; }
+
+.right-side .right-side-menu .menu-top > li > p { color: #ddd; padding: 3px 14px; margin: 2px 0; font-size: 12px; }
+
+.right-side .right-side-menu .menu-top > li > i { display: block; height: 40px; color: #fff; font-size: 12px; text-align: center; line-height: 40px; }
+
+.right-side .right-side-menu .menu-top > li s { display: block; width: 19px; height: 19px; margin: auto; background: url(../img/right_nav.png) no-repeat; }
+
+.right-side .right-side-menu .menu-top > li > b { position: relative; left: -1px; top: 0px; display: block; width: 19px; margin: auto; }
+
+.right-side .right-side-menu .menu-top > li > p { color: #fff; padding: 3px 14px; margin: 2px 0; font-size: 12px; }
+
+.right-side .right-side-menu .menu-top > li > em { text-align: center; display: block; padding: 0 3px; width: 14px; height: 20px; line-height: 20px; border-radius: 10px; background-color: #e3393c; color: #fff; margin: auto; font-size: 12px; font-style: normal; }
+
+.right-side .right-side-menu .menu-top > li span { background-color: #494949; display: none; position: absolute; right: 60px; opacity: 1; top: 0; width: 90px; height: 50px; line-height: 50px; text-align: center; color: #fff; box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); }
+
+.right-side .right-side-menu .menu-top .side-point { display: none; }
+
+.right-side .right-side-menu .menu-top > b { border-bottom: 1px solid #505053; display: block; }
+
+.right-side .right-side-menu .menu-top .user > s { background-position: -1403px -26px; }
+
+.right-side .right-side-menu .menu-top .cart > s { background-position: -1429px 0px; }
+
+.right-side .right-side-menu .menu-top .asset > s { background-position: -1429px -26px; }
+
+.right-side .right-side-menu .menu-top .at-goods > s { background-position: -1455px 0px; }
+
+.right-side .right-side-menu .menu-top .history > s { background-position: -1455px -26px; }
+
+.right-side .right-side-menu .menu-top #right_cart { padding-top: 10px; width: 40px; height: 120px; }
+
+.right-side .right-side-menu .menu-top #right_cart > i { height: 30px; }
+
+.right-side .right-side-menu .menu-top .nini { float: left; width: 50px; text-align: center; padding-left: 20px; line-height: 33px; color: #fff; }
+
+.right-side .right-side-menu .menu-top .online-service { width: 50px; height: 50px; float: left; font-size: 12px; line-height: 10px; }
+
+.right-side .right-side-menu .menu-top .online-service em { background: none; }
+
+.right-side .right-side-menu .menu-top .online-service .qq-img { width: 18px; height: 18px; margin-left: 15px; margin-top: 8px; }
+
+.right-side .side-content { display: none; }

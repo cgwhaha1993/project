@@ -1,4 +1,6 @@
+.heji{width:1000px;margin:0 auto;}
 #product-intro {
+    
     position: relative;
     z-index: 10;
     padding-left: 425px;
@@ -21,6 +23,7 @@
             font-weight: normal;
         }
     }
+
     #summary {
         float: left;
         width: 490px;
@@ -100,9 +103,9 @@
     }
     .preview{
         position: absolute;
-    top: 10px;
-    left: 20px;
-    width: 352px;
+        top: 10px;
+        left: 20px;
+        width: 352px;
         .jqzoom{position:relative;
             width:352px;
             height:352px;
@@ -113,12 +116,136 @@
             overflow: hidden;
             margin-top: 20px;
             width:352px;
-            height:76px;
+            height:50px;
             border:1px solid #ddd;
+            >ul{>li{margin-right:20px;}}
         }
     }
 .xiao{
     overflow: hidden;
     >ul{>li{float: left;}}   
 }
+}
+// 左侧导航条
+.right-side{
+    height:100%;
+    width: 40px;
+    background-color: #2a2a2e;
+    z-index:999999;
+    position:fixed;
+    z-index:999;
+    top:0;
+    right:0;
+    .right-side-menu{
+        ul{
+            position:absolute;
+            }
+        .menu-top{
+            top:20%;
+            >li{padding-top:10px;position:relative;
+                width:40px;
+                height:40px;
+                >p{
+                    color: #ddd;
+                    padding: 3px 14px;
+                    margin: 2px 0;
+                    font-size:12px;
+                }
+                >i{
+                display: block;
+                height: 40px;
+                color:#fff;
+                font-size:12px;
+                text-align:center;
+                line-height:40px;
+            }
+            s{
+                display:block;
+                width:19px;
+                height:19px;
+                margin:auto;
+               background:url(../img/right_nav.png) no-repeat;
+
+            }
+            >b{
+                position:relative;
+                left:-1px;
+                top:0px;
+                display:block;
+                width:19px;
+                margin:auto;
+            }
+            >p{
+            color: #fff;
+            padding: 3px 14px;
+            margin: 2px 0;
+            font-size:12px;
+            }
+            >em{
+            text-align:center;
+            display:block;
+            padding: 0 3px;
+            width: 14px;
+            height: 20px;
+            line-height: 20px;
+            border-radius: 10px;
+            background-color: #e3393c;
+            color: #fff;
+            margin:auto;
+            font-size:12px;
+            font-style:normal;
+            }
+            span{
+                background-color: #494949;
+                display:none;
+                position:absolute;
+                right:60px;
+                opacity:1;
+                top: 0;
+                width: 90px;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                color: #fff;
+                box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+            }
+            }
+            .side-point{display:none;}
+            >b{
+               border-bottom: 1px solid #505053;
+                display: block;  
+            }
+            
+            .user>s{background-position:-1403px -26px;}
+            .cart>s{background-position:-1429px 0px;}
+            .asset>s{background-position:-1429px -26px;}
+            .at-goods>s{background-position:-1455px 0px;}
+            .history>s{
+                background-position:-1455px -26px;
+            }
+            #right_cart{
+                padding-top:10px;width:40px;height:120px;
+                >i{height:30px;}
+            }
+            .nini{float:left;width: 50px;text-align:center; padding-left: 20px;
+                line-height: 33px;color:#fff;
+                }
+            .online-service {
+                width: 50px;
+                height:50px;
+                float: left;
+                font-size:12px;
+                line-height:10px;
+                em{background:none;}
+                .qq-img {
+                    width: 18px;
+                    height: 18px;
+                    margin-left: 15px;
+                    margin-top: 8px;
+                }
+            }
+
+        }
+    }
+    .side-content{display:none;}
 }

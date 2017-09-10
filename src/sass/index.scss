@@ -307,7 +307,7 @@
         text-align: center;
         width: 100%;
         z-index: 3;
-        >span{
+        span{
             display:inline-block;
             margin: 0 5px;
             background: #fff;
@@ -340,18 +340,25 @@
             position:absolute;
             }
         .menu-top{
-            top:15%;
-            >li{padding-top:10px;position:relative;}
-            .side-point{display:none;}
-            >b{
-               border-bottom: 1px solid #505053;
-                display: block;  
-            }
-            >i{
+            top:20%;
+            >li{padding-top:10px;position:relative;
+                width:40px;
+                height:40px;
+                >p{
+                    color: #ddd;
+                    padding: 3px 14px;
+                    margin: 2px 0;
+                    font-size:12px;
+                }
+                >i{
                 display: block;
                 height: 40px;
+                color:#fff;
+                font-size:12px;
+                text-align:center;
+                line-height:40px;
             }
-            >s{
+            s{
                 display:block;
                 width:19px;
                 height:19px;
@@ -385,6 +392,7 @@
             color: #fff;
             margin:auto;
             font-size:12px;
+            font-style:normal;
             }
             span{
                 background-color: #494949;
@@ -400,6 +408,13 @@
                 color: #fff;
                 box-shadow: 0 0 5px rgba(0, 0, 0, .2);
             }
+            }
+            .side-point{display:none;}
+            >b{
+               border-bottom: 1px solid #505053;
+                display: block;  
+            }
+            
             .user>s{background-position:-1403px -26px;}
             .cart>s{background-position:-1429px 0px;}
             .asset>s{background-position:-1429px -26px;}
@@ -411,6 +426,9 @@
                 padding-top:10px;width:40px;height:120px;
                 >i{height:30px;}
             }
+            .nini{float:left;width: 50px;text-align:center; padding-left: 20px;
+                line-height: 33px;color:#fff;
+                }
             .online-service {
                 width: 50px;
                 height:50px;
@@ -606,7 +624,7 @@
                 position:relative;
                 left:0;
                 top:0;
-                width:1000px;
+                width:680px;
                 height:142px;
                 overflow:hidden;
                 >div{

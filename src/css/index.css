@@ -160,7 +160,7 @@
 
 .slide .page { position: absolute; bottom: 15px; z-index: 1; text-align: center; width: 100%; z-index: 3; }
 
-.slide .page > span { display: inline-block; margin: 0 5px; background: #fff; text-align: center; cursor: default; width: 12px; height: 12px; vertical-align: middle; border-radius: 100%; }
+.slide .page span { display: inline-block; margin: 0 5px; background: #fff; text-align: center; cursor: default; width: 12px; height: 12px; vertical-align: middle; border-radius: 100%; }
 
 .slide .cur { background-color: transparent; border: 3px solid #fff; }
 
@@ -168,25 +168,27 @@
 
 .right-side .right-side-menu ul { position: absolute; }
 
-.right-side .right-side-menu .menu-top { top: 15%; }
+.right-side .right-side-menu .menu-top { top: 20%; }
 
-.right-side .right-side-menu .menu-top > li { padding-top: 10px; position: relative; }
+.right-side .right-side-menu .menu-top > li { padding-top: 10px; position: relative; width: 40px; height: 40px; }
+
+.right-side .right-side-menu .menu-top > li > p { color: #ddd; padding: 3px 14px; margin: 2px 0; font-size: 12px; }
+
+.right-side .right-side-menu .menu-top > li > i { display: block; height: 40px; color: #fff; font-size: 12px; text-align: center; line-height: 40px; }
+
+.right-side .right-side-menu .menu-top > li s { display: block; width: 19px; height: 19px; margin: auto; background: url(../img/right_nav.png) no-repeat; }
+
+.right-side .right-side-menu .menu-top > li > b { position: relative; left: -1px; top: 0px; display: block; width: 19px; margin: auto; }
+
+.right-side .right-side-menu .menu-top > li > p { color: #fff; padding: 3px 14px; margin: 2px 0; font-size: 12px; }
+
+.right-side .right-side-menu .menu-top > li > em { text-align: center; display: block; padding: 0 3px; width: 14px; height: 20px; line-height: 20px; border-radius: 10px; background-color: #e3393c; color: #fff; margin: auto; font-size: 12px; font-style: normal; }
+
+.right-side .right-side-menu .menu-top > li span { background-color: #494949; display: none; position: absolute; right: 60px; opacity: 1; top: 0; width: 90px; height: 50px; line-height: 50px; text-align: center; color: #fff; box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); }
 
 .right-side .right-side-menu .menu-top .side-point { display: none; }
 
 .right-side .right-side-menu .menu-top > b { border-bottom: 1px solid #505053; display: block; }
-
-.right-side .right-side-menu .menu-top > i { display: block; height: 40px; }
-
-.right-side .right-side-menu .menu-top > s { display: block; width: 19px; height: 19px; margin: auto; background: url(../img/right_nav.png) no-repeat; }
-
-.right-side .right-side-menu .menu-top > b { position: relative; left: -1px; top: 0px; display: block; width: 19px; margin: auto; }
-
-.right-side .right-side-menu .menu-top > p { color: #fff; padding: 3px 14px; margin: 2px 0; font-size: 12px; }
-
-.right-side .right-side-menu .menu-top > em { text-align: center; display: block; padding: 0 3px; width: 14px; height: 20px; line-height: 20px; border-radius: 10px; background-color: #e3393c; color: #fff; margin: auto; font-size: 12px; }
-
-.right-side .right-side-menu .menu-top span { background-color: #494949; display: none; position: absolute; right: 60px; opacity: 1; top: 0; width: 90px; height: 50px; line-height: 50px; text-align: center; color: #fff; box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); }
 
 .right-side .right-side-menu .menu-top .user > s { background-position: -1403px -26px; }
 
@@ -201,6 +203,8 @@
 .right-side .right-side-menu .menu-top #right_cart { padding-top: 10px; width: 40px; height: 120px; }
 
 .right-side .right-side-menu .menu-top #right_cart > i { height: 30px; }
+
+.right-side .right-side-menu .menu-top .nini { float: left; width: 50px; text-align: center; padding-left: 20px; line-height: 33px; color: #fff; }
 
 .right-side .right-side-menu .menu-top .online-service { width: 50px; height: 50px; float: left; font-size: 12px; line-height: 10px; }
 
@@ -278,7 +282,7 @@
 
 .content_left .tubiao .neirong { width: 220px; overflow: hidden; }
 
-.content_left .tubiao .neirong > ul { position: relative; left: 0; top: 0; width: 1000px; height: 142px; overflow: hidden; }
+.content_left .tubiao .neirong > ul { position: relative; left: 0; top: 0; width: 680px; height: 142px; overflow: hidden; }
 
 .content_left .tubiao .neirong > ul > div { width: 220px; float: left; position: relative; margin: 20px 0 0 0; }
 
